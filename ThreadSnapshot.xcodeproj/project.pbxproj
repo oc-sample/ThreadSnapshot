@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AF6101322CD021200A52BFB /* ThreadSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6101222CD021200A52BFB /* ThreadSnapshot.m */; };
-		4AF6101422CD021200A52BFB /* ThreadSnapshot.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AF6101122CD021200A52BFB /* ThreadSnapshot.h */; };
+		119898C322DF475200B61653 /* KSDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = 119898BF22DF475200B61653 /* KSDynamicLinker.c */; };
+		119898C422DF475200B61653 /* ThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898C122DF475200B61653 /* ThreadInfo.m */; };
+		119898C822DF490600B61653 /* MiniDumpFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898C622DF490600B61653 /* MiniDumpFile.m */; };
+		119898CB22DF4A7F00B61653 /* SysUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898CA22DF4A7F00B61653 /* SysUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +20,21 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4AF6101422CD021200A52BFB /* ThreadSnapshot.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		119898BE22DF475200B61653 /* KSDynamicLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDynamicLinker.h; sourceTree = "<group>"; };
+		119898BF22DF475200B61653 /* KSDynamicLinker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSDynamicLinker.c; sourceTree = "<group>"; };
+		119898C022DF475200B61653 /* ThreadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadInfo.h; sourceTree = "<group>"; };
+		119898C122DF475200B61653 /* ThreadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadInfo.m; sourceTree = "<group>"; };
+		119898C622DF490600B61653 /* MiniDumpFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniDumpFile.m; sourceTree = "<group>"; };
+		119898C722DF490600B61653 /* MiniDumpFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniDumpFile.h; sourceTree = "<group>"; };
+		119898C922DF4A7F00B61653 /* SysUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysUtil.h; sourceTree = "<group>"; };
+		119898CA22DF4A7F00B61653 /* SysUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysUtil.m; sourceTree = "<group>"; };
 		4AF6100E22CD021200A52BFB /* libThreadSnapshot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThreadSnapshot.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AF6101122CD021200A52BFB /* ThreadSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSnapshot.h; sourceTree = "<group>"; };
-		4AF6101222CD021200A52BFB /* ThreadSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSnapshot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +67,14 @@
 		4AF6101022CD021200A52BFB /* ThreadSnapshot */ = {
 			isa = PBXGroup;
 			children = (
-				4AF6101122CD021200A52BFB /* ThreadSnapshot.h */,
-				4AF6101222CD021200A52BFB /* ThreadSnapshot.m */,
+				119898C722DF490600B61653 /* MiniDumpFile.h */,
+				119898C622DF490600B61653 /* MiniDumpFile.m */,
+				119898BF22DF475200B61653 /* KSDynamicLinker.c */,
+				119898BE22DF475200B61653 /* KSDynamicLinker.h */,
+				119898C022DF475200B61653 /* ThreadInfo.h */,
+				119898C122DF475200B61653 /* ThreadInfo.m */,
+				119898C922DF4A7F00B61653 /* SysUtil.h */,
+				119898CA22DF4A7F00B61653 /* SysUtil.m */,
 			);
 			path = ThreadSnapshot;
 			sourceTree = "<group>";
@@ -122,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF6101322CD021200A52BFB /* ThreadSnapshot.m in Sources */,
+				119898C822DF490600B61653 /* MiniDumpFile.m in Sources */,
+				119898CB22DF4A7F00B61653 /* SysUtil.m in Sources */,
+				119898C322DF475200B61653 /* KSDynamicLinker.c in Sources */,
+				119898C422DF475200B61653 /* ThreadInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
