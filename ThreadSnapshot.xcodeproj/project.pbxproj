@@ -11,6 +11,11 @@
 		119898C422DF475200B61653 /* ThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898C122DF475200B61653 /* ThreadInfo.m */; };
 		119898C822DF490600B61653 /* MiniDumpFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898C622DF490600B61653 /* MiniDumpFile.m */; };
 		119898CB22DF4A7F00B61653 /* SysUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 119898CA22DF4A7F00B61653 /* SysUtil.m */; };
+		11BAD38E22F3096E001D565B /* MiniDumpFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 119898C722DF490600B61653 /* MiniDumpFile.h */; };
+		11BAD38F22F3096E001D565B /* KSDynamicLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 119898BE22DF475200B61653 /* KSDynamicLinker.h */; };
+		11BAD39022F3096E001D565B /* ThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 119898C022DF475200B61653 /* ThreadInfo.h */; };
+		11BAD39122F3096E001D565B /* SysUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 119898C922DF4A7F00B61653 /* SysUtil.h */; };
+		11BAD39222F309A1001D565B /* MiniDumpFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 119898C722DF490600B61653 /* MiniDumpFile.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,6 +25,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				11BAD39222F309A1001D565B /* MiniDumpFile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,11 +87,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		11BAD38D22F30948001D565B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BAD38E22F3096E001D565B /* MiniDumpFile.h in Headers */,
+				11BAD38F22F3096E001D565B /* KSDynamicLinker.h in Headers */,
+				11BAD39022F3096E001D565B /* ThreadInfo.h in Headers */,
+				11BAD39122F3096E001D565B /* SysUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		4AF6100D22CD021200A52BFB /* ThreadSnapshot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AF6101722CD021200A52BFB /* Build configuration list for PBXNativeTarget "ThreadSnapshot" */;
 			buildPhases = (
+				11BAD38D22F30948001D565B /* Headers */,
 				4AF6100A22CD021200A52BFB /* Sources */,
 				4AF6100B22CD021200A52BFB /* Frameworks */,
 				4AF6100C22CD021200A52BFB /* CopyFiles */,

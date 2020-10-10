@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+// lipo -create Release-iphoneos/libThreadSnapshot.a Release-iphonesimulator/libThreadSnapshot.a -output libThreadSnapshot.a
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MiniDumpFile : NSObject

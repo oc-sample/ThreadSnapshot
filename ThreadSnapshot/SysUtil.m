@@ -97,7 +97,7 @@
     return strCpuArch;
 }
 
-+(NSString*) CPUArchForMajor:(cpu_type_t) majorCode minor:(cpu_subtype_t) minorCode
++(NSString*) getCpuType:(cpu_type_t) majorCode minor:(cpu_subtype_t) minorCode
 {
     switch(majorCode)
     {
@@ -131,5 +131,6 @@
     }
     return [NSString stringWithFormat:@"unknown(%d,%d)", majorCode, minorCode];
 }
+
 
 @end
